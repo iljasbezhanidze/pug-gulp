@@ -1,6 +1,16 @@
-include pug/_head
+extends pug/_head
 
+block content
+    main.main
+        .__section.--header
+            .container
+                include pug/header
+        .__section
+            .container
+                include pug/first-screen
+        .__section.--card-left
+            .container
+                include pug/card
 
-
-
-include pug/_scripts
+                include pug/footer
+                include pug/_scripts

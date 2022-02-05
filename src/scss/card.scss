@@ -1,0 +1,90 @@
+.main__section--card {
+    border-top: 1px solid #3E3737;
+    border-bottom: 1px solid #3E3737;
+
+}
+.card {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: visible;
+}
+
+.card__col {
+    flex: 1 1 50%;
+    max-width: 50%;
+    padding: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.card--left-slide {
+
+    & .card__col--col-slide {
+        padding-left: 0;
+        border-right: 1px solid #3E3737;
+    }
+}
+
+.card--left-slide {
+
+    & .card__col--col-text {
+        padding-right: 0;
+    }
+}
+
+.swiper {}
+
+.mySwiper {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.swiper-img {}
+
+.swiper-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.swiper-nav--horisontal {}
+
+.swiper-button-next {
+    position: relative;
+}
+
+.swiper-button-prev {
+    position: relative;
+}
+
+.swiper-pagination {
+    position: static;
+}
+
+.card__col--col-text {}
+
+.card-text {}
+
+.card-text__description {
+    color: #770C0C;
+    @include adaptive-font(24,18);
+    margin-bottom: 33px;
+}
+
+.card-text__title {
+    @include adaptive-font(36, 28);
+}
+
+.card-text__main-text {
+    @include adaptive-font(24,18);
+    margin-bottom: 66px;
+}
+
+.card-text__link {
+    @include adaptive-font(36, 28);
+    font-family: "Amiri";
+    font-weight: 400;
+}
